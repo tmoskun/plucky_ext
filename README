@@ -1,0 +1,9 @@
+Add this file to config/initializers folder of your project
+
+This is a patch to handle FactoryGirl associations in Cucumber with MongoMapper.
+
+Example of FactoryGirl associations:
+
+ | title      | user                       |
+ | My article | email: writer1@example.com |
+
