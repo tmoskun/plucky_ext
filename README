@@ -1,8 +1,10 @@
 Add this file to config/initializers folder of your project
 
-This patch handles backward compatibility for the method "find" with :first, :last, :all, which have been removed from MongoMapper/Plucky (its author says, but I checked it actually never existed), as well as compatibility with ActiveRecord. My attempt to add it didn't get any support from the gem owner. 
+This patch handles backward compatibility for the method "find" with :first, :last, :all, which have been removed from MongoMapper/Plucky (its owner says, but I checked it actually never existed), as well as compatibility with ActiveRecord. My attempt to add it didn't get any support from the gem owner.
 
-In particular, the patch helps to run FactoryGirl associations in Cucumber with MongoMapper, which have been known not to be possible before. 
+Add this patch if you experience problems migrating your project from ActiveRecord to Mongo. 
+
+Also, the patch helps to run FactoryGirl associations in Cucumber with MongoMapper, which have been known not to be possible before. 
 
 Example of FactoryGirl associations:
 
